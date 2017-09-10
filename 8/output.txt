@@ -1,0 +1,41 @@
+------------------------------------------------------------
+
+Enter the no of vertices
+5
+
+Enter the adjacency matrix
+0 -1 4 999 999
+999 0 3 2 2
+999 999 0 999 999
+999 1 5 0 999
+999 999 999 3 0
+
+Enter the source vertex
+1
+
+Distance of source 1 to 1 is 0
+Distance of source 1 to 2 is -1
+Distance of source 1 to 3 is 2
+Distance of source 1 to 4 is 1
+Distance of source 1 to 5 is 1
+
+-----------------------------------------------------------
+
+Enter the no of vertices
+5
+
+Enter the adjacency matrix
+0 -1 4 999 999
+999 0 3 2 2
+999 999 0 999 999
+999 1 5 0 999
+999 999 999 3 0
+
+Enter the source vertex
+5
+
+Distance of source 5 to 1 is 999
+Distance of source 5 to 2 is 4
+Distance of source 5 to 3 is 7
+Distance of source 5 to 4 is 3
+Distance of source 5 to 5 is 0
