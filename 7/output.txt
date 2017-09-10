@@ -1,0 +1,39 @@
+										OUTPUT
+
+-------------------------------------SENDER SIDE---------------------------------
+Enter the Dataword (or) the message:
+11001110011110011
+Enter the Generated Polynomial:
+10001000000100001
+Generated Codeword is: 110011100111100111011010111001010
+---------------------------------------------------------------------------------
+
+-----------------------------------RECEIVER SIDE---------------------------------
+Enter the Generated Codeword:
+110011100111100111011010111001010
+Enter the Divisor Polynomial (or) Generator Polynomial:
+10001000000100001
+The data received at the receiver is uncorrupted
+: 11001110011110011
+---------------------------------------------------------------------------------
+
+
+
+
+
+-------------------------------------SENDER SIDE---------------------------------
+Enter the Dataword (or) the message:
+11001110011110011
+Enter the Generated Polynomial:
+10001000000100001
+Generated Codeword is: 110011100111100111011010111001010
+---------------------------------------------------------------------------------
+
+-----------------------------------RECEIVER SIDE---------------------------------
+Enter the Generated Codeword:
+110011100111100111011010111001110
+
+Enter the Divisor Polynomial (or) Generator Polynomial:
+10001000000100001
+The data received at the receiver is corrupted data
+---------------------------------------------------------------------------------
