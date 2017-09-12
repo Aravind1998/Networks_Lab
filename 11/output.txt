@@ -1,11 +1,11 @@
 java RSA 7 
 
 The first random number is 5
-The second random number is 5
-The value of Phi is 16
+The second random number is 7
+The value of Phi is 24
 The Public key is = 7
 The Private key is = 7
-The Modulus is  = 25
-The Random message generated is = 3
-The Encrypted key is = 12
-The Decrypted key is = 8
+The Modulus is  = 35
+The Random message generated is = 11
+The Encrypted key is = 11
+The Decrypted key is = 11
