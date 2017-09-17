@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Leaky{
 	
-		public static int que_size,que_data,trans_size,time,data_sec[],data_sent[],data_rec[],data_dropped[];
+		public static int que_size,que_data,trans_size,buffer=0,orig_buffer=0,time,data_sec[],data_sent[],data_rec[],data_dropped[];
 
 		public static void input()
 		{
@@ -57,11 +57,25 @@ public class Leaky{
 		}
 		
 		public static void display()
-		{
-			System.out.println("Time\tData Sent\tData Received\tData Dropped");
+		{                                                                                                                                                                               
+			System.out.println("Time\tData Sent\tData Received\tData In Bucket\tData Dropped");
 			for(int i=0;i<time;i++)
 			{
-				System.out.println(i+"\t\t"+data_sec[i]+"\t\t"+data_rec[i]+"\t\t"+data_dropped[i]);
+				if(buffer<que_size)
+				{
+					buffer += data_sec[i]-data_rec[i];
+					if(buffer<que_size)
+					{
+						System.out.println(i+"\t\t"+data_sec[i]+"\t\t"+data_rec[i]+"\t\t"+buffer+"\t\t"+data_dropped[i]);
+						orig_buffer = buffer;
+					}
+				}
+					if(buffer>que_size)
+					{
+						buffer = orig_buffer;
+						System.out.println(i+"\t\t"+data_sec[i]+"\t\t"+data_rec[i]+"\t\t"+buffer+"\t\t"+data_dropped[i]);
+					}
+						
 			}
 		}
 
