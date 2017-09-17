@@ -1,53 +1,10 @@
 OUTPUT 1
 
-Enter the size of the queue
-25
-Enter the transmission time
-5
-Enter the size of transmission medium
-30
-Enter data in 0 sec
-10
-Enter data in 1 sec
-15
-Enter data in 2 sec
-20
-Enter data in 3 sec
-25
-Enter data in 4 sec
-30
-Time	Data Sent	Data Received	Data Dropped
-0		10		10		0
-1		15		15		0
-2		20		20		0
-3		25		25		0
-4		30		30		0
-
+Enter the size of the queue                                                                                                             100                                                                                                                
+Enter the transmission time                                                                                                             4                                                                                                                  
+Enter the size of transmission medium                                                                                                    25                                                                                                                                       Enter data in 0 sec                                                                                                                     15                                                                                                                                       Enter data in 1 sec                                                                                                                     50                                                                                                                                       Enter data in 2 sec                                                                                                                     75                                                                                                                                       Enter data in 3 sec                                                                                                                     100                                                                                                                                  Time     Data Sent       Data Received   Data In Bucket  Data Dropped                                                                     0               15              15              0               0                                                                       1               50              25              25              0                                                                       2               75              25              75              0                                                                       3               100             25              75              75  
 
 
 OUTPUT 2
 
-Enter the size of the queue
-25
-Enter the transmission time
-5 
-Enter the size of transmission medium
-30
-Enter data in 0 sec
-40
-Enter data in 1 sec
-30
-Enter data in 2 sec
-45
-Enter data in 3 sec
-50
-Enter data in 4 sec
-55
-Time	Data Sent	Data Received	Data Dropped
-0		40		30		15
-1		30		25		0
-2		45		30		20
-3		50		30		20
-4		55		30		25
-
-
+Enter the size of the queue                                                                                                             100                                                                                                                                     Enter the transmission time                                                                                                             5                                                                                                                                       Enter the size of transmission medium                                                                                                   25                                                                                                                                       Enter data in 0 sec                                                                                                                     50                                                                                                                                       Enter data in 1 sec                                                                                                                     50                                                                                                                                       Enter data in 2 sec                                                                                                                     70                                                                                                                                       Enter data in 3 sec                                                                                                                     25                                                                                                                                       Enter data in 4 sec                                                                                                                     40                                                                                                                                       Time    Data Sent       Data Received           Buffer  Data Dropped                                                                     0               50              25              25              0                                                                       1               50              25              50              0                                                                       2               70              25              95              20                                                                       3               25              25              95              0                                                                       4               40              25              95              15    
